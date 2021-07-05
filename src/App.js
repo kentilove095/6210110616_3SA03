@@ -4,7 +4,8 @@ import CharacterCard from './CharacterCard';
 function App() {
   return (
     <div>
-      <CharacterCard/>
+      <CharacterCard value="h"/>
+      <CharacterCard value="i"/>
     </div>
   );
 }
