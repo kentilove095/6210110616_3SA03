@@ -31,6 +31,8 @@ export default function WordCard(props){
             if(guess == state.word){
                 console.log('yeah!')
                 setState({...state, guess: '', completed : true})
+                state.times ++;
+                console.log(`number of attempt = ${state.times}`)
                 
             }else{
                 console.log('reset, next attempt')
