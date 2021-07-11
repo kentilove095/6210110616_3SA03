@@ -10,6 +10,7 @@ export default function CharacterCard(props) {
             props.activationHandler(props.value)
         }
     }
+    
 
     useEffect(() => {
         if(attemptRef.current !== props.attempt){
@@ -17,6 +18,8 @@ export default function CharacterCard(props) {
             attemptRef.current = props.attempt
         }
     })
+
+    
 
     const className = `card ${active ? 'activeCard': 'trueCard'}`
   

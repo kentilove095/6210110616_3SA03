@@ -38,7 +38,7 @@ export default function WordCard(props){
             }else{
                 console.log('reset, next attempt')
                 state.times ++;
-                setState({...state, guess: '', attempt: state.attempt + 1})
+                setState({...state, guess: '',attempt: state.attempt + 1})
                 console.log(`number of attempt = ${state.times}`)
                 
                 
@@ -50,6 +50,24 @@ export default function WordCard(props){
                 }
                 if(state.times >= 5){
                     console.log(state.word[2])
+                }
+                if(state.times >= 6){
+                    console.log(state.word[3])
+                }
+                if(state.times >= 7){
+                    console.log(state.word[4])
+                }
+                if(state.times >= 8){
+                    console.log(state.word[5])
+                }
+                if(state.times >= 9){
+                    console.log(state.word[6])
+                }
+                if(state.times >= 10){
+                    console.log(state.word[7])
+                }
+                if(state.times >= 11){
+                    console.log(state.word[8])
                 }
             }
             

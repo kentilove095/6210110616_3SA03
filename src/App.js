@@ -1,10 +1,11 @@
 import './App.css'
 import WordCard from './WordCard';
 
-function getRandomString(length) {
+
+function getRandomString() {
   var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var result = '';
-  for ( var i = 0; i < length; i++ ) {
+  for ( var i = 0; i < 18; i++ ) {
       result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
   }
 
@@ -19,7 +20,7 @@ function getRandomString(length) {
 
 
 
-const Str = getRandomString(5)
+const Str = getRandomString()
 const word = Str
 function App() {
   
