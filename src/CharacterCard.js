@@ -18,9 +18,8 @@ export default function CharacterCard(props) {
         }
     })
 
-    const className = `card ${active ? 'activeCard': ''}`
-
-    const correcedtName = `card ${'trueCard'}`
+    const className = `card ${active ? 'activeCard': 'trueCard'}`
+  
     return(
         <div className={className} onClick={activate}>{props.value}</div>
     )
