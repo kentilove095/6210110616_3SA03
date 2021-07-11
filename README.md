@@ -18,6 +18,20 @@
     var arr = str.split('');
     var sorted = arr.sort();
     return sorted.join(''); }   
-    
+ 
+ในส่วนในส่วนของ Commit afterLab3 จะทำการเพิ่มคำใบ้ใน console หากผู้ใช้เล่นผิดเป็นจำนวน 3 ครั้งขึ้นไป โดยครั้งที่ 3 จะใบ้ 1 ตัวอักษร  
+ครั้งที่ 4 จะใบ้ 2 ตัวอักษร และทำการใบ้ 3 ตัวอักษรในครั้งที่ 5 โดยส่วนของโค้ดมีดังนี้
+
+                if(state.times >= 3){
+                    console.log(state.word[0])
+                }
+                if(state.times >= 4){
+                    console.log(state.word[1])
+                }
+                if(state.times >= 5){
+                    console.log(state.word[2])
+                }
+
+โดยคำสั่ง``console.log(state.word[x])``คือคำสั่งในการแสดงตัวอักษรใน console โดย x คือตำแหน่งของตัวอักษร
     
   
