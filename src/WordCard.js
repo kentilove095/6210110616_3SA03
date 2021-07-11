@@ -42,7 +42,15 @@ export default function WordCard(props){
                 console.log(`number of attempt = ${state.times}`)
                 
                 
-                
+                if(state.times >= 3){
+                    console.log(state.word[0])
+                }
+                if(state.times >= 4){
+                    console.log(state.word[1])
+                }
+                if(state.times >= 5){
+                    console.log(state.word[2])
+                }
             }
             
         }
